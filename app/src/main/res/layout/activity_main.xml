@@ -1,52 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:padding="10dp">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="11111111111" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:text="222222222222222" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="33333333" />
-
-        </LinearLayout>
-
-        <android.support.v4.widget.Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介:" />
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="1234567890" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 年龄：30" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 职业:IT" />
     </LinearLayout>
 
-
     <TextView
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="44444" />
-
-</LinearLayout>
+        android:layout_centerVertical="true"
+        android:text="输入简介："
+         />
+     <EditText
+         android:id="@+id/edit"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@+id/txt1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+</RelativeLayout>
