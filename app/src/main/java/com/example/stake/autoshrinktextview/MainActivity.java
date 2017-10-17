@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         edit = (EditText) findViewById(R.id.edit);
         layout = (LinearLayout) findViewById(R.id.layout);
         edit.setText(txt.getText());
+        edit.setSelection(txt.getText().length());
         edit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
