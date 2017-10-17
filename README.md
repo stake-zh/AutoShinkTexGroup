@@ -60,4 +60,4 @@
             android:text=" 职业:IT" />
     </LinearLayout>
 ```
-demo 地址<https://github.com/stake-zh/AutoShinkTexGroup>
+demo 地址<https://github.com/stake-zh/AutoShrinkTexGroup>
